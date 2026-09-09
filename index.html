@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+				padding: 20px;
+				margin: 0px;
+				height: 1500px;
+			}
+		.stocknum {
+			position:fixed;
+			padding: 5px 10px;
+			/* right: 450px; */
+			left: 50%;
+			bottom: 100px;
+			background-color: black;
+			color: white;
+			border-radius: 8px;
+			/* border-color: brown; */
+			border-width: 10px;
+			z-index: 999;
+			margin-top: 10px;
+		}
+		.card
+		{
+			width: 90%;
+			max-width: 320px;
+			height: auto;
+			margin: 60px auto;
+			position:relative;
+			background-color: rgb(203, 169, 236);
+			color: black;
+			border-radius: 15px;
+			text-align: left;
+			/* right: 20px; */
+			 /* width: 320px; */
+			 height: 290px;
+			 padding: 20px;
+			 margin: 60px auto;
+		}
+		.discount
+		{
+			position: absolute;
+			top: -15px;
+			right: 20px;
+			background-color: red;
+			color: white;
+			padding: 5px 7px;
+			border-radius: 30px;
+		}
+		.productimage
+		{
+			/* top: -50px; */
+			/* width: 340px;
+			height: 100px;
+			padding: 4px; */
+			width: 112.5%;
+			height: 120px;
+			padding: 0px;
+			/* image-rendering: auto; */
+			/* border-radius: 50%; */
+			background-color: rgb(113, 0, 170);
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+			/* border-radius: 0xp 10xp 0xp 10xp ; */
+			margin: -20px -20px 15px -20px;
+		} 
+		img
+		{
+			border-radius: 50%;
+			margin: auto;
+			margin-top: 10px;
+			margin-left: 130px;
+			transition: transform 0.3s ease;
+		}
+		.productimage:hover img
+		{
+			transform: scale(1.1);
+		}
+		.discountp
+		{
+			text-align: left;
+			font-weight: bold;
+			font-size: 18px;
+			/* margin-left: 0; */
+		}
+		.originalp
+		{
+			color: gray;
+			font-size: 14px;
+			text-decoration: line-through;
+			margin-left: 8px;
+			/* margin-bottom: 17px; */
+		}
+		.allbutts
+		{
+			display: flex;
+			margin-top: 10px;
+			gap: 20px;
+			/* align-items: baseline; */
+		}
+		.allbutts button:hover
+		{
+			background-color: rgb(85, 0, 130);
+			cursor:pointer;
+		}
+		 .cartbutt button
+		 {
+			/* margin-left: 10px; */
+			background-color: rgb(113, 0, 170);
+			color: rgb(221, 187, 237);
+			font-weight: bold;
+			border: none;
+			border-radius: 8px;
+			/* border: black; */
+			/* margin-left: 50px; */
+			width: 100px;
+			height: 30px;
+		 }
+		 .wishbutt button 
+		 {
+			margin-left: 40px;
+			width: 120px;
+			height: 30px;
+			font-weight: bold;
+			border: none;
+			/* margin-right: 60px; */
+			background-color: rgb(132, 7, 195);
+			color: rgb(221, 187, 237);
+
+			/* color: black; */
+			border-radius: 8px;
+		 }
+		 .stickynavbar
+		 {
+			position: sticky;
+			top: 0;
+			color: black;
+			padding: 20px;
+			border-radius: 15px;
+			background-color: rgb(203, 169, 236);
+			word-spacing: 20px;
+			z-index: 1000;
+		 }
+	</style>
+</head>
+
+<body>
+	<div class="stickynavbar">
+		Home Shop About Contact
+		<!-- <a href="#home">Home</a> -->
+		<!-- <button>Home</button> -->
+	</div>
+	<div class="card">
+		<span class="discount">
+			-30%
+		</span>
+		<div class="productimage">
+			 <img src="/image.png" alt="Example image" style="width: 100px; height: auto;">
+		</div>
+		<h3>Aria HeadPhones</h3>
+		<p>this a wireless headphone that has a 30 hour of battary life and is noise cancelling.</p>
+		<span class="discountp">$69.99</span>
+		<span class="originalp">$99.99</span>
+		<!-- <span class="originalp"><s>$99.99</s></span> -->
+		<!-- <span><p><strong>$69.99 </strong><s>$99.99</s></p></span> -->
+		<!-- <p>bold</p> -->
+		<div class="allbutts">
+			<div class="cartbutt">
+				<button>Add to cart</button>
+			</div>
+			<div class="wishbutt">
+				<button>Add to wishlist</button>
+			</div>
+		</div>
+		
+	</div>
+	<div class="stocknum">
+			⚠️ Only 3 left in stock
+		</div>
+</body>
+
+</html>
