@@ -12,7 +12,7 @@
 				height: 1500px;
 			}
 		.stocknum {
-			position:fixed;
+			position:relative;
 			padding: 5px 10px;
 			/* margin-right: 200px; */
 			/* right: 450px; */
@@ -26,9 +26,8 @@
 			z-index: 999;
 			margin-top: 10px;
 			width: 150px;
-			 box-shadow: 3px 3px 5px grey;
 		}
-		/* .contactme button
+		.contactme button
 		{
 			position: fixed;
 			background-color: rgb(142, 233, 5);
@@ -44,7 +43,7 @@
 		{
 			background-color: darkgreen;
 			cursor: pointer;
-		} */
+		}
 		.card
 		{
 			width: 90%;
@@ -52,7 +51,7 @@
 			height: auto;
 			margin: 60px auto;
 			position:relative;
-			background-color: white;
+			background-color: rgb(203, 169, 236);
 			color: black;
 			border-radius: 15px;
 			text-align: left;
@@ -73,12 +72,9 @@
 			color: white;
 			padding: 5px 7px;
 			border-radius: 30px;
-			 /* box-shadow: 3px 3px 5px red; */
-			 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 		}
 		.productimage
 		{
-			/* padding-top: 40px; */
 			/* top: -50px; */
 			/* width: 340px;
 			height: 100px;
@@ -86,40 +82,21 @@
 			width: 112.5%;
 			height: 120px;
 			padding: 0px;
-			/* background: linear-gradient(to right, #60a5fa, #1d4ed8); */
-			background: linear-gradient(to right, #60a5fa, #2563eb);
 			/* image-rendering: auto; */
 			/* border-radius: 50%; */
-			background-color: blue;
+			background-color: rgb(113, 0, 170);
 			border-top-left-radius: 15px;
 			border-top-right-radius: 15px;
 			/* border-radius: 0xp 10xp 0xp 10xp ; */
 			margin: -20px -20px 15px -20px;
-			text-align: center;
-			/* border-bottom: 4px solid #1d4ed8; */
 		} 
-
 		img
 		{
 			border-radius: 50%;
-			display: block;
-			padding-top: 5px;
-			/* padding-bottom: 1px; */
-			margin: 0 auto;
-			width: 80px;
-			height: 80px;
-			object-fit: cover;
+			margin: auto;
+			margin-top: 10px;
+			margin-left: 130px;
 			transition: transform 0.3s ease;
-		}
-		.image-bar
-		{
-			width: 50px;
-			height: 6px;
-			background-color: rgba(255, 255, 255, 0.4);
-			border-radius: 10px;
-			/* margin-top: 8px; */
-			margin: 6px auto 0 auto;
-			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 		}
 		.productimage:hover img
 		{
@@ -142,8 +119,7 @@
 		}
 		.allbutts
 		{
-			/* display: flex; */
-			
+			display: flex;
 			margin-top: 10px;
 			gap: 20px;
 			
@@ -151,20 +127,15 @@
 		}
 		.allbutts button:hover
 		{
-			background-color: blue;
+			background-color: rgb(85, 0, 130);
 			cursor:pointer;
 			
-		}
-		.cartbutt
-		{
-			display: inline-block;
-
 		}
 		 .cartbutt button
 		 {
 			/* margin-left: 10px; */
-			background-color: rgb(35, 169, 8);
-			color: white;
+			background-color: rgb(113, 0, 170);
+			color: rgb(221, 187, 237);
 			font-weight: bold;
 			border: none;
 			border-radius: 8px;
@@ -172,51 +143,33 @@
 			/* margin-left: 50px; */
 			width: 100px;
 			height: 30px;
-			box-shadow: 3px 3px 5px grey;
-			/* display: inline-block; */
-
-		 }
-		 .wishbutt
-		 {
-			display: inline-block;
+			  box-shadow: 3px 3px 5px grey;
 
 		 }
 		 .wishbutt button 
 		 {
-			 margin-left: 10px;
-			 width: 120px;
-			 height: 30px;
-			 font-weight: bold;
-			 border: none;
-			 /* margin-right: 60px; */
-			 background-color: grey;
-			 /* color: rgb(221, 187, 237); */
-			 color: white;
-			 
-			 /* color: black; */
-			 border-radius: 8px;
-			 box-shadow: 3px 3px 5px grey;
-			 /* display: inline-block; */
-			 
-		 }
-		 a
-		 {
-			text-decoration: none;
-			color: white;
-		 }
-		 a:hover
-		 {
-			color: red;
+			margin-left: 40px;
+			width: 120px;
+			height: 30px;
+			font-weight: bold;
+			border: none;
+			/* margin-right: 60px; */
+			background-color: rgb(132, 7, 195);
+			color: rgb(221, 187, 237);
+
+			/* color: black; */
+			border-radius: 8px;
+			  box-shadow: 3px 3px 5px grey;
+
 		 }
 		 .stickynavbar
 		 {
 			position: sticky;
 			top: 0;
-			color: white;
+			color: black;
 			padding: 20px;
 			border-radius: 15px;
-			/* background-color: rgb(203, 169, 236); */
-			background-color: black;
+			background-color: rgb(203, 169, 236);
 			word-spacing: 20px;
 			z-index: 1000;
 		 }
@@ -225,12 +178,8 @@
 
 <body>
 	<div class="stickynavbar">
-		<!-- Home Shop About Contact -->
-		<a href="#Home">Home</a>
-		<a href="#Shop">Shop</a>
-		<a href="#About">About</a>
-		<a href="#Contact">Contact</a>
-
+		Home Shop About Contact
+		<!-- <a href="#home">Home</a> -->
 		<!-- <button>Home</button> -->
 	</div>
 	<div class="card">
@@ -238,8 +187,7 @@
 			-30%
 		</span>
 		<div class="productimage">
-			 <img src="/image.png" alt="Example image" style="width: 100px; height: auto;">
-			 <div class="image-bar"></div>
+			 <img src="/lavender.png" alt="Example image" style="width: 100px; height: auto;">
 		</div>
 		<h3>Aria HeadPhones</h3>
 		<p>this a wireless headphone that has a 30 hour of battary life and is noise cancelling.</p>
@@ -261,9 +209,9 @@
 	<div class="stocknum">
 			⚠️ Only 3 left in stock
 		</div>
-		<!-- <div class="contactme">
+		<div class="contactme">
 			<button>contact us</button>
-		</div> -->
+		</div>
 </body>
 
 </html>
